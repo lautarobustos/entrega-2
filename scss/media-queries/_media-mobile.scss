@@ -54,7 +54,7 @@
             text-align:center;
             flex-direction: column;
             font-size: 2rem;
-            width: 450px;
+            width: 300px;
             margin-top: 50px;
             margin-bottom: 100px;
             color: $text-color-primario;
@@ -71,7 +71,7 @@
         h1{
             margin-top: 50px;
             font-size: 2.9rem;
-            width: 550px;
+            width: 500px;
         }
     }
     
@@ -91,6 +91,9 @@
         display: flex; /* Cambiar a flexbox */
         flex-direction: column; /* Colocar los items en columna */
         align-items: center;
+        img{
+            width: 400px;
+        }
     }
 
 }
