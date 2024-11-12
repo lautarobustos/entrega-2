@@ -1,0 +1,30 @@
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(3, 1fr); /* 2 filas */
+    gap: 10px; /* Espacio entre los elementos */
+    }
+    
+    .img-1{
+        width: 700px;
+    }
+    .img-2{
+        width: 800px;
+    }
+    .grid-item {
+        
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .grid-item:nth-child(5) {
+        grid-column: span 2; /* Esto hace que el 5to elemento ocupe 2 columnas */
+        }
+
+.nostros-h1{
+    @include titulos;
+}

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Eficapp</title>
 </head>
@@ -13,7 +17,7 @@
         <nav class="navbar navbar-expand-lg bg-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/logo.png" alt="logo"class="logo">
+                    <img href="index.html" src="img/logo.png" alt="logo"class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,74 +33,197 @@
                     <li class="nav-item ">
                         <a class="nav-link activo-cs" href="html/nosotros.html">Nosotros</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link activo-cs" href="html/preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link activo-cs" href="html/contacto.html">Contacto</a>
+                    </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </Section>    
 
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/banner-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/banner-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/banner-3.jpg" class="d-block w-100" alt="...">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+    <section id="hero">
+        <h1 data-aos="fade-up" data-aos-duration="2000" >Un sistema de gestión que ordena tu negocio</h1>
+        <button data-aos="fade-up" data-aos-duration="3000">Crear Cuenta</button>
+    </section>
+
+    <section class="text-intro">
+        <div>
+            <p>
+                Simplificá la <strong>administración</strong> y <strong>automatizá</strong> las tareas con un software integral, simple y práctico, para que puedas concentrarte en hacer crecer tu negocio. Todo esto a un <strong>excelente precio</strong> 🚀
+            </p>
+        </div>
     </section>
 
     <section class="resenas">
-        <h1 class="txt-resenas">Nuestros clientes nos recomiendan</h1>
+        <h2 class="txt-resenas">Nuestros clientes nos recomiendan</h2>
         <section class="resenascard">
-            <div class="card" style="width: 18rem;">
-                    <img src="assets/profile-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Matias Martinez - CEO Brubank</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit alias sed ex deleniti optio odio! Eos modi atque hic sequi reprehenderit consequatur, molestias ipsa explicabo cumque rem, adipisci nisi.</p>
-                    </div>
+            <div data-aos="flip-left" data-aos-duration="2500" class="resena-card">
+                <div class="resena-header">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Usuario" class="resena-avatar">
+                <div class="resena-info">
+                    <h3 class="resena-name">Juan Pérez</h3>
+                    <p class="resena-date">12 de noviembre de 2024</p>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/profile-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Claudia Romero - Cofounder Marolio</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit alias sed ex deleniti optio odio! Eos modi atque hic sequi reprehenderit consequatur, molestias ipsa explicabo cumque rem, adipisci nisi.</p>
-                    </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/profile-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Esteban Benitez - CEO Fravega</h5>
-                    <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, velit alias sed ex deleniti optio odio! Eos modi atque hic sequi reprehenderit consequatur, molestias ipsa explicabo cumque rem, adipisci nisi.</p>
-                    </div>
+                
+                <div class="resena-rating-1">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
                 </div>
+                
+                <p class="resena-text">"Usar este sistema ha sido una gran experiencia. Es fácil de usar, rápido y ha optimizado mi trabajo de manera significativa. Muy recomendable."</p>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="2000" class="resena-card">
+                <div class="resena-header">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Usuario" class="resena-avatar">
+                <div class="resena-info">
+                    <h3 class="resena-name">Romina Fernandez</h3>
+                    <p class="resena-date">25 de agosto de 2024</p>
+                </div>
+                </div>
+                
+                <div class="resena-rating-2">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                </div>
+                
+                <p class="resena-text">"Excelente software. Su interfaz es fácil de usar y las funciones son muy eficientes. Me ha ayudado a mejorar mi productividad, y es rápido y confiable. Totalmente recomendado."</p>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="3000" class="resena-card">
+                <div class="resena-header">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Usuario" class="resena-avatar">
+                <div class="resena-info">
+                    <h3 class="resena-name">Jose Martinez</h3>
+                    <p class="resena-date">4 de mayo de 2024</p>
+                </div>
+                </div>
+                
+                <div class="resena-rating-3">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+                </div>
+                
+                <p class="resena-text">"Un sistema muy intuitivo y potente. Cumple perfectamente con lo que necesito, ahorrándome tiempo y esfuerzo. Lo recomiendo sin dudar."</p>
+            </div>
+            
+            
             </section>
     </section>
+
+    <h3 class="marcas">
+        Las mejores marcas trabajan con nostros
+    </h3>
+    <div class="slider">
+        <div class="move">
+            
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2019/12/MercadoLibre_logo-300x74.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2019/12/VTEX_Logo-300x154.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2022/10/Proyecto-nuevo-300x150.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2022/10/TiendaNube-300x300.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/mercadoshops.svg" alt="">
+            </div>
+            <div class="box"> <!--Slide-->
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/shopi.svg" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/oracle-300x102.png" alt="">
+            </div>
+            
+            <!-- 2da vuelta -->
+            
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2019/12/MercadoLibre_logo-300x74.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2019/12/VTEX_Logo-300x154.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2022/10/Proyecto-nuevo-300x150.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2022/10/TiendaNube-300x300.png" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/mercadoshops.svg" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/shopi.svg" alt="">
+            </div>
+            <div class="box">
+            <img src="https://www.producteca.com/wp-content/uploads/2020/02/oracle-300x102.png" alt="">
+            </div>
+            
+        </div>
+        </div>
     
 
-    <footer>
-        <div class="footer">
-            <p>&copy;Eficapp 2024</p>
+    <footer class="footer">
+        <div class="footer-container">
+            
+        <!-- Sección de Información de Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <ul>
+            <li><a href="#">info@eficapp.com</a></li>
+            <li><a href="https://wa.link/q3vx0o" target="_blank">+54 11 1234 5678</a></li>
+            <li><a href="https://i.ytimg.com/vi/Doi0BL6i3pQ/sddefault.jpg" target="_blank">Calle falsa 123</a></li>
+            </ul>
         </div>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <ul class="social-links">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de Enlaces Rápidos -->
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <p>&copy; 2024 Eficapp. Todos los derechos reservados.</p>
+        </div>
+        </div>
+
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

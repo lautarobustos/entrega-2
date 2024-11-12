@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--aos-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Eficapp</title>
 </head>
@@ -12,8 +14,8 @@
     <Section>
         <nav class="navbar navbar-expand-lg bg-nav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.png" alt="logo"class="logo">
+                <a class="navbar-brand" href="../index.html">
+                    <img href="index.html" src="../img/logo.png" alt="logo"class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,37 +31,120 @@
                     <li class="nav-item ">
                         <a class="nav-link activo-cs" href="nosotros.html">Nosotros</a>
                     </li>
+                    <li class="nav-item ">
+                        <a class="nav-link activo-cs" href="preguntas.html">Preguntas</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link activo-cs" href="contacto.html">Contacto</a>
+                    </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </Section>    
-    <h1>¿Quienes somos?</h1>
+    </Section>      
+    <h1 data-aos="fade-up" data-aos-duration="1000" class="nostros-h1">¿Quienes somos?</h1>
 
     <section class="grid-container">
-        <div class="grid-item-1">
-            <h2>Nuestra historia </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quos. Perspiciatis unde rem est, id corrupti animi quae omnis explicabo optio. Veritatis ad minima magni soluta asperiores adipisci odit libero.</p>
+        <div  class="grid-item">
+            <h2 data-aos="fade-up" data-aos-duration="2000">Nuestra historia </h2>
+            <p data-aos="fade-up" data-aos-duration="3000" >En 2010, dos jóvenes programadores de Buenos Aires, Ana y Carlos, compartían una pasión por la tecnología. Tras notar que muchas pequeñas y medianas empresas no podían acceder a soluciones de software avanzadas debido a los altos costos, decidieron crear un ERP accesible y flexible para este segmento. Así nació Eficapp.
+
+                El Primer Producto: Eficapp ERP
+                En 2011 lanzaron su primer producto, Eficapp ERP, un sistema basado en la nube que ofrecía a las PYMEs la posibilidad de gestionar inventarios, finanzas y ventas sin costosos consultores ni infraestructura. El lanzamiento fue modesto, pero las pequeñas empresas en Buenos Aires rápidamente se dieron cuenta de los beneficios.
+                
+                Expansión y Escalabilidad
+                Para 2015, Eficapp ya tenía clientes en varias partes de Argentina y comenzó a expandir su presencia en América Latina y Europa. La empresa decidió invertir en investigación y desarrollo (I+D), mejorando su software con integraciones, personalización y nuevas funcionalidades, como un módulo CRM. Eficapp pasó de ser una pequeña startup a una empresa con un producto maduro.
+                
+                Innovación Frente a la Competencia
+                En 2016, el mercado se saturó con competidores grandes como Salesforce y Microsoft. En lugar de rendirse, Eficapp apostó por la innovación constante. Implementaron inteligencia artificial (IA) para automatizar procesos y big data para mejorar la toma de decisiones. Además, decidieron abrir una oficina en Europa para acercarse a nuevos mercados y adaptarse a las necesidades locales.
+                
+                El Modelo Freemium y la Expansión Global
+                En 2018, Eficapp lanzó un modelo freemium, permitiendo a las pequeñas empresas probar el ERP de forma gratuita. Esta estrategia permitió que muchas startups y pequeñas empresas adoptaran la plataforma. En 2019, la empresa abrió oficinas en Asia y América Latina, expandiendo su presencia global.
+                
+                Innovación Continua y el Futuro
+                En 2022, Eficapp ya era un nombre reconocido a nivel mundial con más de 30,000 clientes. Además de su ERP, ahora ofrecían soluciones de gestión de proyectos, marketing digital y recursos humanos. Ana y Carlos seguían liderando la empresa, que continuaba innovando con nuevas tecnologías como blockchain y realidad aumentada (AR).</p>
         </div>
-        <img src="../assets/eficacia.png" alt="eficacia" class="grid-item-2">
-        <div class="grid-item-3">
-            <h2>Logros</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto odit vel saepe obcaecati maiores hic repellat, magni ea commodi molestiae ab expedita dolor voluptatibus laborum exercitationem magnam beatae esse ducimus.</p>
+        <img data-aos="fade-up" data-aos-duration="2000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNdSKDQiqpyCTZ-F_ZXjBwU6iOthvOqMrRA&s" alt="eficacia" class="grid-item img-1">
+        <div class="grid-item">
+            <h2 data-aos="fade-up" data-aos-duration="2000">Logros</h2>
+            <ul data-aos="fade-up" data-aos-duration="3000">
+                <li><strong>Lanzamiento del ERP en la Nube</strong> (2011): Eficapp lanzó su <em>sistema ERP</em> accesible y basado en la nube para pequeñas y medianas empresas, revolucionando la gestión empresarial para PYMEs.</li>
+                <li><strong>Expansión Internacional</strong> (2015-2019): Eficapp amplió su presencia a <strong>América Latina, Europa, Asia</strong>, y <strong>América del Norte</strong>, alcanzando una base global de clientes.</li>
+                <li><strong>Innovación con IA y Big Data</strong> (2016-2017): Incorporó <em>inteligencia artificial</em> y <em>analítica avanzada</em> para automatizar procesos y ayudar a las empresas a tomar decisiones basadas en datos.</li>
+                <li><strong>Modelo Freemium</strong> (2018): Lanzó un <em>modelo freemium</em>, permitiendo que muchas pequeñas empresas probaran el software sin costo y aumentaran su base de usuarios.</li>
+                <li><strong>Reconocimiento Global</strong> (2022): Superó los <strong>30,000 clientes</strong> en más de <strong>50 países</strong> y se consolidó como un líder en <em>soluciones ERP para PYMEs</em>.</li>
+            </ul>
         </div>
-        <img src="https://concepto.de/wp-content/uploads/2014/08/empresa-2-e1551381652195.jpg" alt="reunion" class="grid-item-4">
-        <div class="grid-item-5">
-            <h2>Hacia donde vamos</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis iste, cumque nulla repudiandae porro ullam dolores optio nostrum doloribus possimus nisi, doloremque exercitationem modi adipisci eius, alias consectetur commodi qui?</p>
+        <img data-aos="fade-up" data-aos-duration="2000" src="https://concepto.de/wp-content/uploads/2014/08/empresa-2-e1551381652195.jpg" alt="reunion" class="grid-item img-2">
+        <div class="grid-item">
+            <h2 data-aos="fade-up" data-aos-duration="2000">Hacia donde vamos</h2>
+            <div data-aos="fade-up" data-aos-duration="2000">
+            <p>Eficapp, al haber consolidado una base de clientes sólida en más de 50 países, tiene grandes planes para el futuro. La empresa continuará con su expansión internacional, enfocándose especialmente en mercados emergentes como <strong>Asia-Pacífico</strong> y <strong>África</strong>. Estos mercados, en pleno proceso de digitalización, ofrecen un enorme potencial para las soluciones de software accesibles que Eficapp proporciona. Para ello, la compañía buscará establecer <strong>alianzas estratégicas</strong> con empresas locales para adaptar aún más sus productos a las necesidades específicas de estas regiones.</p>
+            <p>La <strong>innovación tecnológica</strong> seguirá siendo una prioridad clave para Eficapp. A medida que las tendencias tecnológicas avanzan, la empresa tiene la intención de integrar <strong>blockchain</strong> en sus plataformas para mejorar la seguridad de los datos y la transparencia. Además, planea incorporar <strong>realidad aumentada (AR)</strong> para ofrecer una experiencia más inmersiva y facilitar la interacción con sus productos. La <strong>inteligencia artificial</strong> también será una herramienta fundamental para seguir automatizando procesos y mejorar la toma de decisiones predictivas dentro de la plataforma.</p>
+
+            <p>Eficapp también tiene planes de <strong>ampliar su oferta de productos</strong>. Además de seguir perfeccionando su ERP, la empresa ampliará su portafolio con soluciones complementarias para <strong>gestión de recursos humanos</strong>, <strong>marketing digital</strong> y <strong>automatización de procesos empresariales</strong>. Esta diversificación le permitirá convertirse en una plataforma integral para PYMEs, ayudándolas a gestionar todos los aspectos de su negocio desde un solo lugar.</p>
+
+            <p>En cuanto a su modelo de negocio, Eficapp continuará con su estrategia <strong>freemium</strong>, permitiendo que pequeñas empresas accedan al ERP básico de manera gratuita. Esto se complementará con la introducción de nuevas funcionalidades premium, diseñadas para satisfacer las necesidades de empresas en crecimiento que requieren soluciones más avanzadas y personalizadas. Además, la compañía se está preparando para ofrecer <strong>servicios de consultoría</strong> y <strong>soporte técnico especializado</strong>, lo que permitirá a las empresas maximizar el valor del software.</p>
+
+            <p>Otra de las proyecciones de Eficapp es fortalecer su <strong>comunidad de desarrolladores</strong>. La empresa lanzará programas de formación y certificación para que más desarrolladores puedan crear aplicaciones y soluciones integradas sobre su plataforma. Este ecosistema de terceros enriquecerá aún más el producto y ampliará sus capacidades.</p>
+
+            <p>En el aspecto de la <strong>sostenibilidad</strong>, Eficapp también tiene grandes planes. La compañía está comprometida con reducir su huella de carbono y adoptará prácticas más sostenibles en sus operaciones. A largo plazo, busca obtener certificaciones medioambientales y seguir promoviendo tecnologías que no solo fomenten la innovación, sino que también respeten el medio ambiente.</p>
+
+            <p>Por último, Eficapp tiene como objetivo consolidarse como el <strong>líder mundial en ERP para PYMEs</strong>. Con una base de más de 30,000 clientes en todo el mundo, la compañía continuará evolucionando su producto para convertirse en la solución preferida para las pequeñas y medianas empresas que buscan una herramienta de gestión empresarial integral, accesible y eficaz.</p>
+
+            <p>En resumen, las proyecciones de Eficapp para los próximos años están centradas en <strong>expansión global</strong>, <strong>innovación continua</strong>, y un <strong>compromiso con la sostenibilidad</strong>, con el objetivo de mantenerse como el referente en software de gestión para PYMEs en un mundo cada vez más digital.</p>
+        </div>
         </div>
         
     </section>
 
 
-    <footer>
-        <div class="footer">
-            <p>&copy;Eficapp 2024</p>
+    <footer class="footer">
+        <div class="footer-container">
+            
+        <!-- Sección de Información de Contacto -->
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <ul>
+            <li><a href="#">info@eficapp.com</a></li>
+            <li><a href="https://wa.link/q3vx0o" target="_blank">+54 11 1234 5678</a></li>
+            <li><a href="https://i.ytimg.com/vi/Doi0BL6i3pQ/sddefault.jpg" target="_blank">Calle falsa 123</a></li>
+            </ul>
         </div>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <ul class="social-links">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de Enlaces Rápidos -->
+        <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Precios</a></li>
+            <li><a href="#">Contacto</a></li>
+            </ul>
+            
+        </div>
+
+        <div class="footer-section">
+            <p>&copy; 2024 Eficapp. Todos los derechos reservados.</p>
+        </div>
+        </div>
+
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

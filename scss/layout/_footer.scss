@@ -1,0 +1,85 @@
+
+// Variables (opcional, puedes definir colores y tamaños)
+$primary-color: #fbc02d;
+$secondary-color: #333;
+$tertiary-color: #ccc;
+$footer-background: #333;
+$footer-text-color: #fff;
+$footer-link-hover-color: $primary-color;
+$footer-link-color: $tertiary-color;
+$footer-text-muted: #aaa;
+$max-width: 1200px;
+
+// Estilos generales del footer
+.footer {
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin: 20px;
+        min-width: 250px;
+
+        h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: $primary-color; // Color de los títulos
+        }
+
+        ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            color: $footer-link-color;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+            color: $footer-link-hover-color;
+            }
+        }
+        }
+    }
+
+    .social-links {
+        display: flex;
+        gap: 15px;
+
+        li {
+        list-style: none;
+        }
+
+        a {
+        color: $footer-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $footer-link-hover-color;
+        }
+        }
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        color: $footer-text-muted;
+    }
+    }
+
+    
